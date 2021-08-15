@@ -1,0 +1,10 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+- avahi-daemon
+- qemu-system-x86
+
+runcmd:
+- curl -fsSL https://get.docker.com -o get-docker.sh
+- sudo sh get-docker.sh
