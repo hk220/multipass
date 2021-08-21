@@ -15,4 +15,4 @@ runcmd:
 - curl -fsSL https://golang.org/dl/go1.17.linux-amd64.tar.gz -o /run/golang-install/go1.17.linux-amd64.tar.gz
 - rm -rf /usr/local/go && tar -C /usr/local -xzf /run/golang-install/go1.17.linux-amd64.tar.gz
 - echo 'export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin' | tee /etc/profile.d/go.sh
-- pip install diskimage-builder
+- pip install diskimage-builder ironic-python-agent-builder
